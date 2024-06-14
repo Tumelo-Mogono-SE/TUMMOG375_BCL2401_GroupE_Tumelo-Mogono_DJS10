@@ -26,9 +26,9 @@ function Api () {
         <>
             <h1>Posts</h1>
             <ul>
-                {apiPost.map( post => (
+                {apiPost.map( (post, index) => (
                     <li>
-                        <h2>{post.title}</h2>
+                        <h2>{index + 1}. {post.title}</h2>
                         <p>{post.body}</p>
                     </li>
                 ))}
